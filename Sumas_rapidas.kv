@@ -1,0 +1,58 @@
+<Sumas_rapidasWindow>:
+    size_hint:(None,None)
+    size:(800,500)
+    pos:(0,0)
+    Label:
+        id:titulo
+        text:'RESPONDA EN EL TIEMPO INDICADO:'
+        font_size:40
+        pos:(0,400)
+        size_hint:(1,.25)
+    Label:
+        id:num1
+        text:''
+        font_size:50
+        pos:(100,250)
+        size_hint:(.1,.15)
+    Label:
+        text:'+'
+        font_size:50
+        pos:(200,250)
+        size_hint:(.1,.15)
+    Label:
+        id:num2
+        text:''
+        font_size:50
+        pos:(300,250)
+        size_hint:(.1,.15)
+    Label:
+        text:'='
+        font_size:50
+        pos:(450,250)
+        size_hint:(.1,.15)
+    TextInput:
+        id:respuesta
+        multiline:False
+        font_size:50
+        pos:(520,250)
+        size_hint:(.15,.15)
+        halign: 'center'
+        on_text_validate:root.verificar_suma()
+    Button:
+        text:'Iniciar'
+        pos:(650,250)
+        size_hint:(.15,.15)
+        on_release:root.iniciar()
+    Label:
+        id:tiempo_restante
+        text:'--'
+        font_size:35
+        size_hint:(.1,.15)
+        pos:(200,100)
+    Label:
+        id:racha
+        text:'Racha: 0'
+        font_size:50
+        size_hint:(.1,.15)
+        pos:(500,100)
+    
