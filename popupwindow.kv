@@ -1,0 +1,17 @@
+<MyRelativeLayout>:
+    Button:
+        text:"Abrir Pestaña"
+        #background_color: 17,0,101,1
+        pos_hint: {"x":0, "y":0}
+        size_hint: 0.5, 0.5
+        on_release:root.open_popup()
+ 
+<Pestaña>:
+    id:pop
+    size_hint: .4, .4
+    auto_dismiss: False
+    title: 'HOLA MUNDO'
+ 
+    Button:
+        text: 'Pestaña Emergente Ejecutada'
+        on_release: pop.dismiss()
